@@ -3,6 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Aala Family Japan Trip — August 2026</title>
+<script>
+(function() {
+  var pwd = sessionStorage.getItem('japan2026auth');
+  if (pwd !== 'Japan2026') {
+    var input = prompt('🇯🇵 Aala Family Japan Trip\nEnter password to view:');
+    if (input !== 'Japan2026') {
+      document.documentElement.innerHTML = '<div style="font-family:sans-serif;text-align:center;padding:60px;"><h2>🔒 Access Denied</h2><p>Incorrect password. Please try again.</p></div>';
+      return;
+    }
+    sessionStorage.setItem('japan2026auth', 'Japan2026');
+  }
+})();
+</script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
