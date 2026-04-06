@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aala Family Japan Trip — August 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #fff;
+    color: #222;
+    padding: 24px;
+    font-size: 13px;
+  }
+  h1 { text-align: center; font-size: 22px; font-weight: 700; letter-spacing: 1px; margin-bottom: 4px; color: #1a1a2e; }
+  .subtitle { text-align: center; font-size: 13px; color: #666; margin-bottom: 20px; }
+  .calendar { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; margin-bottom: 20px; }
+  .day-header { text-align: center; font-weight: 700; font-size: 11px; text-transform: uppercase; color: #666; padding: 6px 0; letter-spacing: 0.5px; }
+  .day { border: 1px solid #ddd; border-radius: 6px; padding: 8px 7px; min-height: 130px; background: #fafafa; }
+  .day.empty { background: #f5f5f5; border-color: #eee; min-height: 40px; }
+  .day.travel { background: #fff8e1; border-color: #f9a825; }
+  .day.tokyo { background: #e8f5e9; border-color: #43a047; }
+  .day.tokyo2 { background: #e3f2fd; border-color: #1e88e5; }
+  .day.kyoto { background: #f3e5f5; border-color: #8e24aa; }
+  .day.osaka { background: #fbe9e7; border-color: #f4511e; }
+  .day.bigday { background: #fff3e0; border-color: #fb8c00; }
+  .day.hawaii { background: #e0f7fa; border-color: #00acc1; }
+  .day-num { font-size: 16px; font-weight: 700; color: #1a1a2e; margin-bottom: 3px; }
+  .day-label { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; color: #555; }
+  .tag { font-size: 9px; font-weight: 700; border-radius: 3px; padding: 1px 4px; display: inline-block; margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.4px; }
+  .t-flight { background: #fff8e1; color: #f57f17; border: 1px solid #f9a825; }
+  .t-hotel { background: #e8f5e9; color: #2e7d32; border: 1px solid #66bb6a; }
+  .t-event { background: #fce4ec; color: #c62828; border: 1px solid #ef9a9a; }
+  .t-activity { background: #e3f2fd; color: #1565c0; border: 1px solid #42a5f5; }
+  .t-food { background: #f9fbe7; color: #558b2f; border: 1px solid #aed581; }
+  .ev { font-size: 10.5px; line-height: 1.45; margin-bottom: 2px; color: #333; }
+  .pending { color: #e53935; font-weight: 600; }
+  .legend { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 20px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; }
+  .legend-box { width: 14px; height: 14px; border-radius: 3px; border: 1px solid #ccc; }
+  .notes { border: 1px solid #ddd; border-radius: 8px; padding: 14px 18px; background: #f9f9f9; margin-bottom: 14px; }
+  .notes h3 { font-size: 13px; margin-bottom: 8px; color: #1a1a2e; }
+  .notes ul { list-style: none; padding: 0; }
+  .notes li { font-size: 11.5px; margin-bottom: 5px; padding-left: 16px; position: relative; color: #444; }
+  .notes li::before { content: "•"; position: absolute; left: 0; color: #999; }
+  @media print { body { padding: 12px; } .day { min-height: 110px; } }
+</style>
+</head>
+<body>
+
+<h1>✈️ Aala Family Japan Trip — August 2026</h1>
+<div class="subtitle">August 2–20, 2026 &nbsp;|&nbsp; Izzy · Amy · Nathan · Chloe · Brayden</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-box" style="background:#e0f7fa;border-color:#00acc1"></div> Hawaii</div>
+  <div class="legend-item"><div class="legend-box" style="background:#fff8e1;border-color:#f9a825"></div> Travel</div>
+  <div class="legend-item"><div class="legend-box" style="background:#e8f5e9;border-color:#43a047"></div> Tokyo (Shibuya Tobu)</div>
+  <div class="legend-item"><div class="legend-box" style="background:#e3f2fd;border-color:#1e88e5"></div> Tokyo (KANDA HOUSE)</div>
+  <div class="legend-item"><div class="legend-box" style="background:#f3e5f5;border-color:#8e24aa"></div> Kyoto (MIMARU)</div>
+  <div class="legend-item"><div class="legend-box" style="background:#fbe9e7;border-color:#f4511e"></div> Osaka (ESLEAD)</div>
+  <div class="legend-item"><div class="legend-box" style="background:#fff3e0;border-color:#fb8c00"></div> Big Event Day</div>
+</div>
+
+<div class="calendar">
+  <div class="day-header">Sun</div>
+  <div class="day-header">Mon</div>
+  <div class="day-header">Tue</div>
+  <div class="day-header">Wed</div>
+  <div class="day-header">Thu</div>
+  <div class="day-header">Fri</div>
+  <div class="day-header">Sat</div>
+
+  <!-- Aug 2 Sun -->
+  <div class="day travel">
+    <div class="day-num">2</div>
+    <div class="day-label">Sun — Depart</div>
+    <div class="tag t-flight">✈️ LGB→HNL</div>
+    <div class="ev">Alaska 869 · 7:00 AM</div>
+    <div class="ev">Izzy · Chloe · Brayden</div>
+    <div class="ev">Arrive 9:50 AM</div>
+    <div class="ev">🚗 Amy picks up → Waianae</div>
+  </div>
+
+  <!-- Aug 3 Mon -->
+  <div class="day travel">
+    <div class="day-num">3</div>
+    <div class="day-label">Mon — To Japan!</div>
+    <div class="tag t-flight">✈️ HNL→HND</div>
+    <div class="ev">Alaska 863 · 12:25 PM</div>
+    <div class="ev">Full family · 9h 45m</div>
+    <div class="ev">Conf: DHGEJA</div>
+  </div>
+
+  <!-- Aug 4 Tue -->
+  <div class="day tokyo">
+    <div class="day-num">4</div>
+    <div class="day-label">Tue — Arrive Tokyo!</div>
+    <div class="tag t-flight">🛬 HND 5:10 PM</div>
+    <div class="tag t-hotel">🏨 Shibuya Tobu</div>
+    <div class="ev">Check in · Rest up</div>
+    <div class="ev">🍜 Ramen near hotel</div>
+  </div>
+
+  <!-- Aug 5 Wed -->
+  <div class="day tokyo">
+    <div class="day-num">5</div>
+    <div class="day-label">Wed — Easy Day</div>
+    <div class="tag t-activity">🛍 Shibuya Shopping</div>
+    <div class="ev">Recover from jet lag</div>
+    <div class="ev">Explore neighborhood</div>
+    <div class="tag t-food">🍜 Ramen + konbini</div>
+    <div class="ev">Don Quijote nearby</div>
+  </div>
+
+  <!-- Aug 6 Thu -->
+  <div class="day bigday">
+    <div class="day-num">6</div>
+    <div class="day-label">Thu — DisneySea! 🏰</div>
+    <div class="tag t-event">🏰 Tokyo DisneySea</div>
+    <div class="ev">Maihama Station</div>
+    <div class="ev">~45 min from Shibuya</div>
+    <div class="ev">Weekday = less crowded ✅</div>
+    <div class="ev">Book: tokyodisneyresort.jp</div>
+  </div>
+
+  <!-- Aug 7 Fri -->
+  <div class="day bigday">
+    <div class="day-num">7</div>
+    <div class="day-label">Fri — PokéPark + Cars!</div>
+    <div class="tag t-event">🎮 PokéPark KANTO</div>
+    <div class="ev">Yomiuriland, Tama Hills</div>
+    <div class="ev">~40 min from Shibuya</div>
+    <div class="ev">Book: pokepark-kanto.com</div>
+    <div class="tag t-event">🚗 Daikoku PA (Eve)</div>
+    <div class="ev">JDM car meet 7:30–10:30PM</div>
+    <div class="ev">Uber ~¥3,500 to Yokohama</div>
+  </div>
+
+  <!-- Aug 8 Sat -->
+  <div class="day tokyo">
+    <div class="day-num">8</div>
+    <div class="day-label">Sat — Tokyo</div>
+    <div class="tag t-activity">📍 Akihabara</div>
+    <div class="ev">Anime / game shops</div>
+    <div class="tag t-activity">📍 Harajuku</div>
+    <div class="ev">Takeshita-dori + Kiddy Land</div>
+  </div>
+
+  <!-- Aug 9 Sun -->
+  <div class="day tokyo2">
+    <div class="day-num">9</div>
+    <div class="day-label">Sun — Move Hotels</div>
+    <div class="tag t-hotel">🏨 KANDA HOUSE</div>
+    <div class="ev">Shin-Okubo / Shinjuku</div>
+    <div class="ev">Check out Shibuya Tobu</div>
+    <div class="tag t-activity">📍 Shin-Okubo Koreatown</div>
+  </div>
+
+  <!-- Aug 10 Mon -->
+  <div class="day tokyo2">
+    <div class="day-num">10</div>
+    <div class="day-label">Mon — Tokyo</div>
+    <div class="tag t-activity">📍 Shinjuku</div>
+    <div class="ev">Kabukicho / Omoide</div>
+    <div class="tag t-activity">📍 Ueno / Asakusa</div>
+    <div class="ev">Senso-ji Temple</div>
+  </div>
+
+  <!-- Aug 11 Tue -->
+  <div class="day kyoto">
+    <div class="day-num">11</div>
+    <div class="day-label">Tue — Kyoto!</div>
+    <div class="tag t-flight">🚄 Shinkansen</div>
+    <div class="ev">Tokyo → Kyoto ~2h 15m</div>
+    <div class="tag t-hotel">🏨 MIMARU Kyoto</div>
+    <div class="ev">Kawaramachi Gojo</div>
+    <div class="ev">3 min walk to station</div>
+    <div class="tag t-food">🍜 Nishiki Market</div>
+  </div>
+
+  <!-- Aug 12 Wed -->
+  <div class="day bigday">
+    <div class="day-num">12</div>
+    <div class="day-label">Wed — Guided Tour 🚌</div>
+    <div class="tag t-event">🚌 Bus Tour</div>
+    <div class="ev"><strong>Nara + Sanjusangen-do</strong></div>
+    <div class="ev">+ Sanzenin Temple</div>
+    <div class="ev">Pickup: Kyoto Station</div>
+    <div class="ev">Hachijo Entrance</div>
+    <div class="ev">GetYourGuide t1158289</div>
+  </div>
+
+  <!-- Aug 13 Thu -->
+  <div class="day kyoto">
+    <div class="day-num">13</div>
+    <div class="day-label">Thu — Kyoto</div>
+    <div class="tag t-activity">🥇 Kinkaku-ji</div>
+    <div class="ev">Golden Pavilion</div>
+    <div class="tag t-activity">🏯 Nijo Castle</div>
+    <div class="tag t-activity">🎋 Arashiyama Bamboo</div>
+    <div class="ev">Togetsukyo Bridge</div>
+  </div>
+
+  <!-- Aug 14 Fri -->
+  <div class="day bigday">
+    <div class="day-num">14</div>
+    <div class="day-label">Fri — Osaka + MGK! 🎸</div>
+    <div class="tag t-flight">🚄 Kyoto→Osaka</div>
+    <div class="ev">~30 min by JR</div>
+    <div class="tag t-hotel">🏨 ESLEAD Namba South II</div>
+    <div class="tag t-event">🎸 Summer Sonic</div>
+    <div class="ev">MGK @ Expo '70 Park</div>
+    <div class="ev">Namba → Bampakukinenkoen</div>
+  </div>
+
+  <!-- Aug 15 Sat -->
+  <div class="day bigday">
+    <div class="day-num">15</div>
+    <div class="day-label">Sat — Street Kart! 🏎️</div>
+    <div class="tag t-event">🏎️ Street Kart Osaka</div>
+    <div class="ev">Drive thru city streets!</div>
+    <div class="ev">Costumes provided</div>
+    <div class="ev">~¥8,000/person (~$50)</div>
+    <div class="tag t-food">🍜 Dotonbori dinner</div>
+  </div>
+
+  <!-- Aug 16 Sun -->
+  <div class="day osaka">
+    <div class="day-num">16</div>
+    <div class="day-label">Sun — Osaka</div>
+    <div class="tag t-activity">🗼 Tsutenkaku</div>
+    <div class="ev">4 min walk from hotel!</div>
+    <div class="tag t-activity">📍 Shinsekai district</div>
+    <div class="tag t-activity">🛁 Spa World</div>
+  </div>
+
+  <!-- Aug 17 Mon -->
+  <div class="day bigday">
+    <div class="day-num">17</div>
+    <div class="day-label">Mon — USJ! 🎢</div>
+    <div class="tag t-event">🎢 Universal Studios Japan</div>
+    <div class="ev">JR Loop → Universal City</div>
+    <div class="ev">~15 min from hotel</div>
+    <div class="ev">⚡ Super Nintendo World</div>
+    <div class="ev">🧙 Harry Potter area</div>
+    <div class="ev">Book: usj.co.jp</div>
+  </div>
+
+  <!-- Aug 18 Tue -->
+  <div class="day osaka">
+    <div class="day-num">18</div>
+    <div class="day-label">Tue — Last Day Osaka</div>
+    <div class="tag t-activity">🛍 Shinsaibashi</div>
+    <div class="ev">Shopping arcade</div>
+    <div class="tag t-food">🦞 Kuromon Market</div>
+    <div class="ev">Fresh seafood + snacks</div>
+    <div class="ev">🧳 Pack for airport</div>
+  </div>
+
+  <!-- Aug 19 Wed -->
+  <div class="day travel">
+    <div class="day-num">19</div>
+    <div class="day-label">Wed — Fly Home</div>
+    <div class="tag t-hotel">🏨 Check Out</div>
+    <div class="ev">ESLEAD Namba South II</div>
+    <div class="tag t-flight">🚐 Van → KIX</div>
+    <div class="ev">Private transfer ~$80–120</div>
+    <div class="tag t-flight">✈️ KIX→LAX 6:20 PM</div>
+    <div class="ev">Korean Air KE726/KE17</div>
+    <div class="ev">Amy · Nathan · Chloe · Brayden</div>
+    <div class="ev pending">⚠️ Izzy return TBD</div>
+  </div>
+
+  <!-- Aug 20 Thu -->
+  <div class="day hawaii">
+    <div class="day-num">20</div>
+    <div class="day-label">Thu — Home!</div>
+    <div class="ev">🏠 Arrive LAX 10:10 AM</div>
+    <div class="ev">Amy · Nathan · Chloe · Brayden</div>
+  </div>
+
+  <div class="day empty"></div>
+  <div class="day empty"></div>
+  <div class="day empty"></div>
+
+</div>
+
+<!-- Hotels -->
+<div class="notes">
+  <h3>🏨 Hotels</h3>
+  <ul>
+    <li><strong>Tokyo Aug 4–9 (5 nights):</strong> Shibuya Tobu Hotel, Shibuya | Coin laundry 2F ¥300</li>
+    <li><strong>Tokyo Aug 9–11 (2 nights):</strong> KANDA HOUSE!! Shin-Okubo | Yamanote Line 3 min walk</li>
+    <li><strong>Kyoto Aug 11–14 (3 nights):</strong> MIMARU Kyoto Kawaramachi Gojo | 3 min walk Kiyomizu-Gojo Station | ~$598</li>
+    <li><strong>Osaka Aug 14–19 (5 nights):</strong> ESLEAD HOTEL Namba South II | Rating 9.1 | $633 total | FREE cancellation before Aug 11 | Tsutenkaku 4 min walk</li>
+    <li class="pending">⚠️ CANCEL: Hotel Villa Fontaine Grand Tokyo-Shiodome (duplicate) | Booking.com | shio@hvf.jp | +81 3-3569-2220</li>
+  </ul>
+</div>
+
+<!-- Flights -->
+<div class="notes">
+  <h3>✈️ Flights</h3>
+  <ul>
+    <li><strong>Aug 2 LGB→HNL:</strong> Alaska 869 · 7:00 AM | Izzy 37G · Chloe 37J · Brayden 37H | Check in via Hawaiian Airlines</li>
+    <li><strong>Aug 3 HNL→HND:</strong> Alaska 863 · 12:25 PM | Full family | Conf: DHGEJA | Arrive Aug 4 5:10 PM</li>
+    <li><strong>Aug 19 KIX→LAX:</strong> Korean Air KE726/KE17 · 6:20 PM | Amy · Nathan · Chloe · Brayden | Ref: 40-858467523 | PIN: 9990 | Arrive LAX Aug 20 10:10 AM</li>
+    <li class="pending">⚠️ PENDING — Amy & Nathan: LGB→HNL Aug 2 (booking own)</li>
+    <li class="pending">⚠️ PENDING — Izzy: Return flight from Japan not booked</li>
+  </ul>
+</div>
+
+<!-- Excursions -->
+<div class="notes">
+  <h3>🎟️ Excursions — Book in Advance!</h3>
+  <ul>
+    <li><strong>Aug 5 🎮 PokéPark KANTO:</strong> Yomiuriland, Tama Hills | World's first Pokémon outdoor park | Book: pokepark-kanto.com</li>
+    <li><strong>Aug 7 🏰 Tokyo DisneySea:</strong> Maihama Station (~45 min) | Book: tokyodisneyresort.jp — sells out fast!</li>
+    <li><strong>Aug 12 🦌 Nara Deer Park:</strong> Day trip from Kyoto ~45 min | Free entry | Todai-ji Giant Buddha | Feed deer!</li>
+    <li><strong>Aug 14 🎸 Summer Sonic (MGK):</strong> Expo '70 Park, Osaka | 1-Day ticket ¥21,000/person (~$132) | Buy NOW: summersonic.com</li>
+    <li><strong>Aug 15 🏎️ Street Kart Osaka:</strong> Go-karts on city streets | ~¥8,000/person (~$50) | kart.st/osaka.html</li>
+    <li><strong>Aug 17 🎢 Universal Studios Japan:</strong> Super Nintendo World + Harry Potter | Book: usj.co.jp — buy Express Pass too!</li>
+  </ul>
+</div>
+
+<!-- Transit -->
+<div class="notes">
+  <h3>🚇 Transit Tips</h3>
+  <ul>
+    <li><strong>Suica IC Card:</strong> Set up on iPhone/Apple Wallet before departure — works on all trains, buses, convenience stores</li>
+    <li><strong>Aug 11 Shinkansen:</strong> Tokyo → Kyoto Hikari ~2h 15m | ~¥13,870/person (~$87) × 5 = ~$435 | Buy at station or smartex-online.com</li>
+    <li><strong>Aug 19 Airport Transfer:</strong> Private van Osaka → KIX ~$80–120 total | Book via Klook or Viator</li>
+    <li><strong>NO JR Pass needed</strong> — not worth it for this itinerary (saves ~$1,000 vs buying individual tickets)</li>
+  </ul>
+</div>
+
+<!-- Open Tasks -->
+<div class="notes" style="border-color:#e53935;">
+  <h3>📋 Open Tasks</h3>
+  <ul>
+    <li style="color:#e53935"><strong>🔴 BUY NOW:</strong> Summer Sonic 1-Day tickets (Aug 14 MGK Osaka) — ¥21,000×5 ~$660 | summersonic.com pre-sale OPEN</li>
+    <li style="color:#e53935"><strong>🔴 BUY NOW:</strong> PokéPark KANTO (Aug 7) | pokepark-kanto.com</li>
+    <li style="color:#e53935"><strong>🔴 CANCEL:</strong> Hotel Villa Fontaine Shiodome (duplicate) | shio@hvf.jp | +81-3-3569-2220</li>
+    <li style="color:#e53935"><strong>🔴 DO NOW:</strong> ESLEAD pre-registration | connect.hotelsmart.jp/register/AAABVoL82rwa7oO4NJaMt0XgqtYJZC-Dcbg</li>
+    <li style="color:#e65100"><strong>🟡 BY WED APR 8:</strong> Book Amy & Nathan LGB→HNL flights (Aug 2)</li>
+    <li style="color:#e65100"><strong>🟡 BY WED APR 8:</strong> Book Izzy return flight from Japan</li>
+    <li style="color:#e65100"><strong>🟡 BY WED APR 8:</strong> Buy Summer Sonic tickets | summersonic.com</li>
+    <li style="color:#e65100"><strong>🟡 SOON:</strong> Book Kyoto Bus Tour Aug 12 (Nara+Sanjusangen-do+Sanzenin) | GetYourGuide t1158289 | Kyoto Station Hachijo pickup</li>
+    <li style="color:#e65100"><strong>🟡 SOON:</strong> Buy USJ tickets + Express Pass (Aug 17) | usj.co.jp | ~$325</li>
+    <li style="color:#e65100"><strong>🟡 SOON:</strong> Buy Shinkansen Tokyo→Kyoto (Aug 11) | ~$435 total</li>
+    <li><strong>📅 Jul 6, 8AM PDT:</strong> Buy Tokyo DisneySea tickets (Aug 6) | tokyodisneyresort.jp ✅ Reminder set</li>
+    <li><strong>🟢 2 weeks before:</strong> Street Kart Osaka (Aug 15) | kart.st/osaka.html | ~¥8,000/person</li>
+    <li><strong>🟢 2 weeks before:</strong> Private van Osaka→KIX (Aug 19) | Klook/Viator | ~$100</li>
+    <li><strong>🟢 Before departure:</strong> Set up Suica IC on iPhone Apple Wallet for all 5 family members</li>
+  </ul>
+</div>
+
+<div style="text-align:center;font-size:11px;color:#555;margin-top:16px;">
+  📋 Full details + tasks in Notion: <a href="https://www.notion.so/Aala-Family-Japan-Trip-August-2026-33a56f432b4d81168b88ec9a953d0064" target="_blank">Aala Family Japan Trip — August 2026</a>
+</div>
+<div style="text-align:center;font-size:10px;color:#aaa;margin-top:6px;">Generated by Jarvis · Aala Family Japan Trip 2026 · Updated April 5, 2026</div>
+
+</body>
+</html>
