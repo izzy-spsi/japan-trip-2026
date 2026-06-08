@@ -12,10 +12,10 @@
   }
   window.addEventListener('DOMContentLoaded', function() {
     var stored = sessionStorage.getItem('japan2026auth');
-    if (stored === 'Japan2026') { show(); return; }
+    if (stored === 'izzy@2026') { show(); return; }
     var input = prompt('🇯🇵 Aala Family Japan Trip — August 2026\nEnter password to view:');
-    if (input === 'Japan2026') {
-      sessionStorage.setItem('japan2026auth', 'Japan2026');
+    if (input === 'izzy@2026') {
+      sessionStorage.setItem('japan2026auth', 'izzy@2026');
       show();
     } else {
       deny();
