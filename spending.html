@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Japan Trip 2026 — Spending Tracker</title>
+<style>#spend-content{display:none}</style>
+<script>
+(function() {
+  function show() { document.getElementById('spend-content').style.display = 'block'; }
+  function deny() {
+    document.body.innerHTML = '<div style="font-family:sans-serif;text-align:center;padding:80px;"><h2>🔒 Access Denied</h2><p>Incorrect password.</p></div>';
+  }
+  window.addEventListener('DOMContentLoaded', function() {
+    var stored = sessionStorage.getItem('japanspendauth');
+    if (stored === 'japan@2026') { show(); return; }
+    var input = prompt('💴 Japan Trip 2026 — Spending Tracker\nEnter password to view:');
+    if (input === 'japan@2026') {
+      sessionStorage.setItem('japanspendauth', 'japan@2026');
+      show();
+    } else {
+      deny();
+    }
+  });
+})();
+</script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #fff;
+    color: #222;
+    padding: 24px;
+    font-size: 13px;
+  }
+  h1 { text-align: center; font-size: 22px; font-weight: 700; letter-spacing: 1px; margin-bottom: 4px; color: #1a1a2e; }
+  .subtitle { text-align: center; font-size: 13px; color: #666; margin-bottom: 20px; }
+  .backlink { text-align: center; font-size: 12px; margin-bottom: 20px; }
+  .backlink a { color: #1565c0; text-decoration: none; }
+
+  .summary { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 24px; }
+  .summary-card { border: 1px solid #ddd; border-radius: 8px; padding: 12px 20px; background: #f9f9f9; text-align: center; min-width: 130px; }
+  .summary-card .label { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.5px; color: #777; margin-bottom: 4px; }
+  .summary-card .value { font-size: 18px; font-weight: 700; color: #1a1a2e; }
+
+  .notes { border: 1px solid #ddd; border-radius: 8px; padding: 14px 18px; background: #f9f9f9; margin-bottom: 16px; }
+  .notes h3 { font-size: 13px; margin-bottom: 8px; color: #1a1a2e; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  th { text-align: left; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.4px; color: #666; padding: 6px 8px; border-bottom: 2px solid #ddd; }
+  td { padding: 7px 8px; border-bottom: 1px solid #eee; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  .cat { font-size: 9.5px; font-weight: 700; border-radius: 3px; padding: 1px 6px; display: inline-block; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap; }
+  .c-bags { background: #e3f2fd; color: #1565c0; border: 1px solid #42a5f5; }
+  .c-food { background: #f9fbe7; color: #558b2f; border: 1px solid #aed581; }
+  .c-transit { background: #fff8e1; color: #f57f17; border: 1px solid #f9a825; }
+  .c-hotel { background: #e8f5e9; color: #2e7d32; border: 1px solid #66bb6a; }
+  .c-activity { background: #fce4ec; color: #c62828; border: 1px solid #ef9a9a; }
+  .c-shopping { background: #f3e5f5; color: #8e24aa; border: 1px solid #ba68c8; }
+  .c-other { background: #eceff1; color: #455a64; border: 1px solid #90a4ae; }
+  .amt-usd { font-weight: 700; color: #1a1a2e; white-space: nowrap; }
+  .amt-yen { color: #777; font-size: 11px; white-space: nowrap; }
+
+  .notes ul { list-style: none; padding: 0; }
+  .notes li { font-size: 11.5px; margin-bottom: 5px; padding-left: 16px; position: relative; color: #444; }
+  .notes li::before { content: "•"; position: absolute; left: 0; color: #999; }
+
+  @media print { body { padding: 12px; } }
+</style>
+</head>
+<body>
+<div id="spend-content">
+<h1>💴 Japan Trip 2026 — Spending Tracker</h1>
+<div class="subtitle">Aala Family · August 2–20, 2026</div>
+<div class="backlink"><a href="index.html">← Back to Itinerary</a></div>
+
+<div class="summary">
+  <div class="summary-card">
+    <div class="label">Total Spent (USD)</div>
+    <div class="value" id="total-usd">$35.00</div>
+  </div>
+  <div class="summary-card">
+    <div class="label">Total Spent (¥ equiv.)</div>
+    <div class="value" id="total-yen">¥5,516</div>
+  </div>
+  <div class="summary-card">
+    <div class="label">Exchange Rate</div>
+    <div class="value" style="font-size:14px;">¥157.6 = $1</div>
+  </div>
+</div>
+
+<div class="notes">
+  <h3>🧾 Receipt Log</h3>
+  <table>
+    <tr>
+      <th>Date</th>
+      <th>Item</th>
+      <th>Category</th>
+      <th>Amount</th>
+      <th>Paid By</th>
+    </tr>
+    <!-- ENTRY ROWS START -->
+    <tr>
+      <td>Aug 1</td>
+      <td>Checked bag — Alaska Air</td>
+      <td><span class="cat c-transit">✈️ Flight/Bag Fee</span></td>
+      <td><span class="amt-usd">$35.00</span><br><span class="amt-yen">≈ ¥5,516</span></td>
+      <td>Izzy</td>
+    </tr>
+    <!-- ENTRY ROWS END -->
+  </table>
+</div>
+
+<div class="notes">
+  <h3>ℹ️ Notes</h3>
+  <ul>
+    <li>Send receipts (photo or amount) and Jarvis will log each one here with category, date, and running total.</li>
+    <li>Exchange rate shown is checked periodically and applied consistently for ¥ equivalents — not a live/real-time rate.</li>
+    <li>This page is separate from the main itinerary and password-protected on its own.</li>
+  </ul>
+</div>
+
+<div style="text-align:center;font-size:10px;color:#aaa;margin-top:16px;">Generated by Jarvis · Aala Family Japan Trip 2026 · Spending Tracker</div>
+</div>
+</body>
+</html>
